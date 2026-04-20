@@ -1,4 +1,5 @@
 from discord import Activity, ActivityType, Embed
+from dotenv import load_dotenv
 from requests import get
 from discord.ext import commands
 from datetime import datetime
