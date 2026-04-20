@@ -5,6 +5,9 @@ from datetime import datetime
 from time import time as __, sleep as zzz
 from re import findall
 
+load_env()
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 def log(text,sleep=None): 
     print(f"[{datetime.utcfromtimestamp(__()).strftime('%Y-%m-%d %H:%M:%S')}] → {text}")
     if sleep: zzz(sleep)
